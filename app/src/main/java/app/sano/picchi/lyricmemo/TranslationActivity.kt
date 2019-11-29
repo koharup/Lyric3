@@ -1,14 +1,11 @@
-package app.sano.picchi.lyric3
+package app.sano.picchi.lyricmemo
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
-import android.widget.AdapterView
-import android.widget.TextView
 import io.realm.Realm
-import kotlinx.android.synthetic.main.activity_add.*
 import kotlinx.android.synthetic.main.activity_translation.*
 
 class TranslationActivity : AppCompatActivity() {
@@ -39,7 +36,7 @@ class TranslationActivity : AppCompatActivity() {
         contentText.setText(memo.content)
         updateText.setText(memo.updateDate)
         kashiText.setText(memo.word1)
-        kashi2Text.setText(memo.word2)
+        //kashi2Text.setText(memo.word2)
 
     }
 
@@ -65,7 +62,7 @@ class TranslationActivity : AppCompatActivity() {
         Log.d("updateDate", updateText.text.toString())
         Log.d("content", contentText.text.toString())
         Log.d("word", kashiText.text.toString())
-        Log.d("word2", kashi2Text.text.toString())
+        //Log.d("word2", kashi2Text.text.toString())
 
         super.onDestroy()
 

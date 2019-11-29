@@ -72,6 +72,7 @@
             android:hint="歌詞2"
             android:inputType="textPersonName"
             android:onClick="ChangeReturnActivity"
+            android:lines="80"
             android:textColor="#313131"
             android:textColorHint="#313131" />
 

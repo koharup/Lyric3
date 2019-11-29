@@ -1,11 +1,10 @@
-package app.sano.picchi.lyric3
+package app.sano.picchi.lyricmemo
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.AdapterView
-import android.widget.EditText
 import android.widget.ListView
 import io.realm.Realm
 
@@ -35,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         listView.onItemClickListener =
                 AdapterView.OnItemClickListener { parent, view, position, id ->
                     val memo = parent.getItemAtPosition(position) as Memo
-                    val intent = Intent(this@MainActivity, TranslationActivity::class.java)
+                    val intent = Intent(this@MainActivity, DetailActivity::class.java)
                     intent.putExtra("updateDate", memo.updateDate)
                     startActivity(intent)
                 }

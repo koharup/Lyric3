@@ -36,9 +36,9 @@
             android:ems="10"
             android:gravity="top"
             android:hint="歌詞1"
-            android:inputType="textPersonName"
+            android:lines="80"
+            android:inputType="textMultiLine"
             android:textColor="@android:color/background_light" />
-
         <EditText
             android:id="@+id/word2EditText"
             android:layout_width="match_parent"
@@ -47,7 +47,8 @@
             android:ems="10"
             android:gravity="top"
             android:hint="歌詞2"
-            android:inputType="textPersonName"
+            android:lines="80"
+            android:inputType="textMultiLine"
             android:textColor="@android:color/background_light" />
 
 

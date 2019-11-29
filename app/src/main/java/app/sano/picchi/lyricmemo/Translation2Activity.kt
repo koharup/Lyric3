@@ -1,9 +1,8 @@
-package app.sano.picchi.lyric3
+package app.sano.picchi.lyricmemo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import io.realm.Realm
-import kotlinx.android.synthetic.main.activity_translation.*
 import kotlinx.android.synthetic.main.activity_translation2.*
 
 class Translation2Activity : AppCompatActivity() {
